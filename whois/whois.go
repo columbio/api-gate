@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/duoflow/whois-email-resolver/loggers"
+	"github.com/columbio/api-gate/loggers"
 )
 
 const (

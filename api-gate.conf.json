@@ -1,0 +1,10 @@
+
+{
+    "DBHOSTIP": "10.250.16.81",
+    "PORT": "5432",
+    "USERNAME": "postgres",
+    "PASSWORD": "P@ssw0rd",
+    "DBNAME": "events",
+    "SCHEME": "events_asbi"
+}
+

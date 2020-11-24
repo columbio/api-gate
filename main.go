@@ -8,9 +8,10 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/duoflow/whois-email-resolver/asbi"
-	"github.com/duoflow/whois-email-resolver/loggers"
-	"github.com/duoflow/whois-email-resolver/whois"
+	"github.com/columbio/api-gate/asbi"
+	"github.com/columbio/api-gate/config"
+	"github.com/columbio/api-gate/loggers"
+	"github.com/columbio/api-gate/whois"
 
 	"github.com/gorilla/mux"
 )
@@ -20,6 +21,8 @@ func main() {
 	// make loggers initialization
 	loggers.Init(ioutil.Discard, os.Stdout, os.Stdout, os.Stderr)
 	loggers.Info.Printf("Application starts")
+	// read config
+	config.ReadConfig()
 	// web app start
 	handleRequests()
 }

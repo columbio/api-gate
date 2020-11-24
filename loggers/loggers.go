@@ -18,8 +18,8 @@ var (
 
 // Init - init logging operations
 func Init(traceHandle io.Writer, infoHandle io.Writer, warningHandle io.Writer, errorHandle io.Writer) {
-	Trace = log.New(traceHandle, "API TRACE: ", log.Ldate|log.Ltime|log.Lshortfile)
-	Info = log.New(infoHandle, "API INFO: ", log.Ldate|log.Ltime|log.Lshortfile)
-	Warning = log.New(warningHandle, "API WARNING: ", log.Ldate|log.Ltime|log.Lshortfile)
-	Error = log.New(errorHandle, "API ERROR: ", log.Ldate|log.Ltime|log.Lshortfile)
+	Trace = log.New(traceHandle, "API-GATE TRACE: ", log.Ldate|log.Ltime|log.Lshortfile)
+	Info = log.New(infoHandle, "API-GATE INFO: ", log.Ldate|log.Ltime|log.Lshortfile)
+	Warning = log.New(warningHandle, "API-GATE WARNING: ", log.Ldate|log.Ltime|log.Lshortfile)
+	Error = log.New(errorHandle, "API-GATE ERROR: ", log.Ldate|log.Ltime|log.Lshortfile)
 }
